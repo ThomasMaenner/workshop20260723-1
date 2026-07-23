@@ -8,7 +8,7 @@
   --color-bg: #00ff00;          /* Giftgrün als Hintergrund */
   --color-text: #cc0000;        /* Feuerrot für bessere Lesbarkeit */
   --color-muted: #990000;       /* Dunkleres Rot für sekundäre Texte */
-  --font-family: system-ui, sans-serif;
+  --font-family: 'Handlee', cursive;
   --radius: 12px;               /* Weniger abgerundete Ecken für professionelleres Erscheinungsbild */
 }
 
