@@ -3,11 +3,11 @@
   ohne irgendwo anders im CSS suchen zu müssen.
 */
 :root {
-  --color-dark: #003366;        /* Dunkelblau für technisches Erscheinungsbild */
-  --color-dark-light: #005599;  /* Mittelblau für Gradienten */
-  --color-bg: #f0f8ff;          /* Helles Blau als Hintergrund */
-  --color-text: #333333;        /* Dunkelgrau für bessere Lesbarkeit */
-  --color-muted: #666666;       /* Mittelgrau für sekundäre Texte */
+  --color-dark: #cc0000;        /* Feuerrot für Texte */
+  --color-dark-light: #ff3333;  /* Hellere Rottöne für Gradienten */
+  --color-bg: #00ff00;          /* Giftgrün als Hintergrund */
+  --color-text: #cc0000;        /* Feuerrot für bessere Lesbarkeit */
+  --color-muted: #990000;       /* Dunkleres Rot für sekundäre Texte */
   --font-family: system-ui, sans-serif;
   --radius: 12px;               /* Weniger abgerundete Ecken für professionelleres Erscheinungsbild */
 }
