@@ -26,8 +26,8 @@ body {
 .hero {
   min-height: 75vh;
   padding: 32px;
-  color: white;
-  background: linear-gradient(135deg, var(--color-dark), var(--color-dark-light));
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 nav {
