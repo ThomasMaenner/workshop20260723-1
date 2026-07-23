@@ -8,41 +8,43 @@
   </head>
   <body>
     <!--
-          AUFBAU DIESER SEITE (4 Bausteine):
-          1. Navigation + Hero   -> ganz oben, großer Einstieg
-          2. Über Uns            -> id="ueber-uns", Haupttext
-          3. Leistungen          -> id="leistungen", 3 Karten nebeneinander
-          4. Kontakt + Footer    -> id="kontakt", Ende der Seite
+              AUFBAU DIESER SEITE (5 Bausteine):
+              1. Navigation + Hero   -> ganz oben, großer Einstieg
+              2. Über Uns            -> id="ueber-uns", Haupttext
+              3. Leistungen          -> id="leistungen", 4 Karten nebeneinander
+              4. Software            -> id="software", 3 Software-Produkte
+              5. Kontakt + Footer    -> id="kontakt", Ende der Seite
 
-          Farben & Schriftart ändern? -> styles.css, ganz oben im Block ":root"
-        -->
+              Farben & Schriftart ändern? -> styles.css, ganz oben im Block ":root"
+            -->
 
     <header class="hero">
       <!-- KOMPONENTE: Navigation. Menüpunkt hinzufügen = <a> hier + passende <section id="..."> unten -->
       <nav>
         <strong>casim engineering</strong>
-        <button
-          class="mobile-menu-btn"
-          aria-label="Menü öffnen"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
-        <div class="nav-links">
-          <a href="#ueber-uns">Über uns</a>
-                    <a href="#leistungen">Leistungen</a>
-                    <a href="#kontakt">Kontakt</a>
-        </div>
+                <button
+                  class="mobile-menu-btn"
+                  aria-label="Menü öffnen"
+                  aria-expanded="false"
+                >
+                  ☰
+                </button>
+                <div class="nav-links">
+                  <a href="#ueber-uns">Über uns</a>
+                  <a href="#leistungen">Leistungen</a>
+                  <a href="#software">Software</a>
+                  <a href="#kontakt">Kontakt</a>
+                </div>
       </nav>
 
       <!-- KOMPONENTE: Hero. Das Erste, was Besucher:innen sehen -->
       <section>
-        <p class="eyebrow">Gebaut im Vibe-Coding-Kurs</p>
-        <h1>Meine erste eigene Website mit KI</h1>
-        <p>
-          Diese Seite wurde mit VS Code, Continue und GitHub Pages erstellt.
-        </p>
-        <a class="button" href="#idee">Los geht's</a>
+        <p class="eyebrow">Ingenieurleistungen & Software</p>
+                <h1>Toleranzmanagement & Geometrie</h1>
+                <p>
+                  Innovative Lösungen für die technische Produktentwicklung und Qualitätssicherung
+                </p>
+                <a class="button" href="#ueber-uns">Mehr erfahren</a>
       </section>
     </header>
 
@@ -51,27 +53,55 @@
       <section id="ueber-uns" class="section">
               <h2>Über uns</h2>
               <p>
-                Seit über 15 Jahren entwickelt die casim engineering GmbH & Co. KG innovative Lösungen für die industrielle Produktion. 
-                Unser Team aus erfahrenen Ingenieuren und Technikern steht für Qualität, Zuverlässigkeit und praxisnahe Umsetzung.
+                Die casim engineering GmbH & Co. KG ist ein führender Anbieter von ingenieurtechnischen Dienstleistungen 
+                im Bereich Toleranzmanagement, Geometrische Produktspezifikation und Qualitätssicherung. 
+                Seit über 20 Jahren unterstützen wir Unternehmen aus der Automobil-, Zulieferer- und Maschinenbaubranche 
+                bei der Optimierung ihrer Entwicklungs- und Produktionsprozesse.
               </p>
             </section>
 
       <!-- KOMPONENTE: Feature-Karten. Für eine weitere Karte einfach ein <article>-Block kopieren -->
       <section id="leistungen" class="cards">
               <article>
-                <h3>Maschinenbau</h3>
-                <p>Entwicklung und Konstruktion maßgeschneiderter Maschinen für die Produktion.</p>
+                <h3>Toleranzmanagement</h3>
+                <p>Statistische Tolerierung, Toleranzanalyse und Optimierung von Produkten und Prozessen</p>
               </article>
 
               <article>
-                <h3>Automatisierung</h3>
-                <p>Individuelle Lösungen für die Prozessautomatisierung und Fertigungsoptimierung.</p>
+                <h3>Geometrische Produktspezifikation</h3>
+                <p>Maß-, Form- und Lagetolerierung nach GPS-Norm und deren praktische Anwendung</p>
               </article>
 
               <article>
-                <h3>Engineering</h3>
-                <p>Von der Idee bis zur Umsetzung - ganzheitliche technische Beratung und Betreuung.</p>
+                <h3>Präventive Qualität</h3>
+                <p>FMEA, Prozessfähigkeit und 3D-Messtechnik für höchste Qualitätsstandards</p>
               </article>
+        
+              <article>
+                <h3>FE-Analyse</h3>
+                <p>Finite-Elemente-Analysen und DMS-Messtechnik für strukturelle Bewertungen</p>
+              </article>
+            </section>
+      
+            <!-- KOMPONENTE: Software. Für eine weitere Karte einfach ein <article>-Block kopieren -->
+            <section id="software" class="section">
+              <h2>Software</h2>
+              <div class="cards">
+                <article>
+                  <h3>simTOL</h3>
+                  <p>Software zur Toleranzanalyse und statistischen Tolerierung von Baugruppen</p>
+                </article>
+
+                <article>
+                  <h3>simQS</h3>
+                  <p>Qualitätssicherungssoftware für Prozess- und Messdatenanalyse</p>
+                </article>
+
+                <article>
+                  <h3>simSERVICE</h3>
+                  <p>Service-Management-System für technische Dienstleistungen</p>
+                </article>
+              </div>
             </section>
 
       <!-- KOMPONENTE: Kontakt -->
@@ -79,10 +109,10 @@
               <h2>Kontakt</h2>
               <p>
                 casim engineering GmbH & Co. KG<br>
-                Musterstraße 123<br>
-                12345 Musterstadt<br>
-                Telefon: +49 (0) 123 456789<br>
-                E-Mail: info@casim-engineering.de
+                Friedrich-Ebert-Straße 14<br>
+                73431 Aalen<br>
+                Telefon: +49 (0) 7361 90939-0<br>
+                E-Mail: info@casim.de
               </p>
             </section>
     </main>

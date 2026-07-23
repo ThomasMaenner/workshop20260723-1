@@ -151,10 +151,3 @@ footer {
     display: flex;
   }
 }
-    z-index: 10;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
