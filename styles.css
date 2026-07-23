@@ -3,13 +3,13 @@
   ohne irgendwo anders im CSS suchen zu müssen.
 */
 :root {
-  --color-dark: #111827;
-  --color-dark-light: #334155;
-  --color-bg: #f8fafc;
-  --color-text: #111827;
-  --color-muted: #64748b;
+  --color-dark: #003366;        /* Dunkelblau für technisches Erscheinungsbild */
+  --color-dark-light: #005599;  /* Mittelblau für Gradienten */
+  --color-bg: #f0f8ff;          /* Helles Blau als Hintergrund */
+  --color-text: #333333;        /* Dunkelgrau für bessere Lesbarkeit */
+  --color-muted: #666666;       /* Mittelgrau für sekundäre Texte */
   --font-family: system-ui, sans-serif;
-  --radius: 24px;
+  --radius: 12px;               /* Weniger abgerundete Ecken für professionelleres Erscheinungsbild */
 }
 
 * {
@@ -110,7 +110,7 @@ article {
   background: white;
   padding: 28px;
   border-radius: var(--radius);
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 51, 102, 0.15); /* Blau mit Transparenz für Schatten */
 }
 
 footer {
@@ -144,6 +144,13 @@ footer {
     gap: 16px;
     background: var(--color-dark-light);
     border-radius: 12px;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
     z-index: 10;
   }
 
