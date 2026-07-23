@@ -1,0 +1,10 @@
+# Geheimnisse - niemals committen (echte API-Keys landen hier lokal)
+.env
+.continue/.env
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Falls doch mal npm-Pakete installiert werden
+node_modules/

@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine erste KI-Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+      AUFBAU DIESER SEITE (4 Bausteine):
+      1. Navigation + Hero   -> ganz oben, großer Einstieg
+      2. Idee-Sektion        -> id="idee", Haupttext
+      3. Feature-Karten      -> id="features", 3 Karten nebeneinander
+      4. Kontakt + Footer    -> id="kontakt", Ende der Seite
+
+      Farben & Schriftart ändern? -> styles.css, ganz oben im Block ":root"
+    -->
+
+    <header class="hero">
+      <!-- KOMPONENTE: Navigation. Menüpunkt hinzufügen = <a> hier + passende <section id="..."> unten -->
+      <nav>
+        <strong>Meine Website</strong>
+        <button
+          class="mobile-menu-btn"
+          aria-label="Menü öffnen"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <div class="nav-links">
+          <a href="#idee">Idee</a>
+          <a href="#features">Features</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </nav>
+
+      <!-- KOMPONENTE: Hero. Das Erste, was Besucher:innen sehen -->
+      <section>
+        <p class="eyebrow">Gebaut im Vibe-Coding-Kurs</p>
+        <h1>Meine erste eigene Website mit KI</h1>
+        <p>
+          Diese Seite wurde mit VS Code, Continue und GitHub Pages erstellt.
+        </p>
+        <a class="button" href="#idee">Los geht's</a>
+      </section>
+    </header>
+
+    <main>
+      <!-- KOMPONENTE: Idee-Text. Ein Absatz, der erklärt, worum es auf der Seite geht -->
+      <section id="idee" class="section">
+        <h2>Die Idee</h2>
+        <p>
+          Hier steht später die Idee für diese Website. Zum Beispiel: ein Café,
+          ein Portfolio, ein kleines Produkt oder eine Event-Seite.
+        </p>
+      </section>
+
+      <!-- KOMPONENTE: Feature-Karten. Für eine weitere Karte einfach ein <article>-Block kopieren -->
+      <section id="features" class="cards">
+        <article>
+          <h3>Schnell gebaut</h3>
+          <p>Wir ändern die Website Schritt für Schritt mit KI-Unterstützung.</p>
+        </article>
+
+        <article>
+          <h3>Einfach gestaltet</h3>
+          <p>HTML und CSS reichen für eine ansehbare erste Website.</p>
+        </article>
+
+        <article>
+          <h3>Online veröffentlicht</h3>
+          <p>GitHub Pages macht aus den Dateien eine öffentliche Website.</p>
+        </article>
+      </section>
+
+      <!-- KOMPONENTE: Kontakt -->
+      <section id="kontakt" class="section">
+        <h2>Kontakt</h2>
+        <p>Kontakt: hello@example.com</p>
+      </section>
+    </main>
+
+    <!-- KOMPONENTE: Footer -->
+    <footer>
+      <p>© 2026 Vibe-Coding-Kurs</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
